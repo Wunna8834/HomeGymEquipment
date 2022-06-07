@@ -93,7 +93,8 @@ img {
 
 @media screen and (min-width: 800px) {
     img {
-        width: 20vw;
+        width: 40vw;
+        
     }
     .card-container {
        padding-right: 3rem;
@@ -101,6 +102,12 @@ img {
     }
     .card {
         width: 320px;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    img {
+        width: 20vw;
     }
 }
 

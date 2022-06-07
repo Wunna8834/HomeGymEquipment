@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Inder&family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inder&family=Open+Sans:wght@300&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+img {
+    width: 100vw;
+    z-index: -1;
+    object-fit: cover;
+}
+.container {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+.registering {
+    background-color: #fff;
+    z-index: 1;
+    position: absolute;
+    top: 35%;
+    border-radius: 25px 25px 0 0;
+    width: 100vw;
+    padding: 1rem;
+}
+.title-text {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.input {
+    margin-bottom: 1rem;
+    padding: 0.8rem;
+    width: 100%;
+    background-color: #F9F7F7;
+    border: none;
+    box-shadow: 5px 4px 5px rgba(0, 0, 0, 0.25);
+}
+.input.error {
+    border: 2px solid #F32424;
+}
+.input.success {
+    border: 2px solid #36AE7C;
+}
+.input:focus {
+    border: 3px solid #A369DE ;
+    outline: none;
+}
+.input::placeholder,.gender {
+    font-family: 'Open Sans', sans-serif;
+    color: #9D9B9B;
+   
+}
+.message {
+    display: none;
+    margin-bottom: 0;
+}
+.message.error {
+    display: block;
+    color: #e74c3c;;
+}
+
+
+.gender {
+    display: flex;
+    padding-left: 0.5rem;
+    align-items: center;
+    color: #494343;
+}
+
+.sign-up-btn {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    border: none;
+    background-color: #7e41ba;
+    border-radius: 4px;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+.sign-up-btn:hover, .sign-up-btn:focus {
+    background-color: #8653b9;
+}
+
+.question {
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+@media screen and (min-width: 800px) {
+    .container {
+       display: flex;
+       justify-content: space-around;
+       gap: 4rem;
+       flex-direction: row-reverse;
+       padding: 0;
+       height: auto;
+    }
+    img {
+        width: 40vw;
+        height: 100%;
+        object-fit: contain;
+        position: absolute;
+        right: 0;
+        top: 0;
+        opacity: 0.8;
+        z-index: 1;
+    }
+    .registering {
+        background-color: transparent;
+        width: 50vw;
+        position: relative;
+    }
+}
