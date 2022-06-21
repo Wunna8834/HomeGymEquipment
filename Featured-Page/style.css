@@ -1,0 +1,126 @@
+body {
+    overflow-x: hidden;
+}
+.featured-products {
+    position: relative;
+}
+.featured-products h1 {
+    text-align: center;
+    font-family: 'Inder', sans-serif;
+}
+
+.categories-payment {
+    /* position: absolute; */
+    width: 100vw;
+    background-color: #377CD1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    color: #F8F1F1;
+    margin: 0;
+    padding: 0.5rem;
+}
+
+.ctg h3, .payment h3 {
+    font-size: 0.8em
+}
+.list li {
+    margin-left: -1.2rem;
+    font-size: 0.8em;
+    line-height: 1.5rem;
+    list-style-type: circle;
+}
+.products {
+    padding: 1rem;
+}
+.product {
+    display: flex;
+    
+    align-items: center;
+    gap: 1rem;
+    width: 100vw;
+}
+.img {
+    width: 30vw;
+   
+}
+.discription {
+    width: 70vw;
+    margin-top: 2rem;
+    margin-right: 3rem;
+}
+img {
+    width: 100%;
+    
+    object-fit: cover;
+}
+
+.discription h2 {
+    overflow: hidden;
+}
+.discription p {
+    font-weight: bold;   
+}
+
+.discription span {
+    font-weight: 400;
+}
+.discription span i {
+    color: #FFCE31;
+}
+#star {
+    color: #8D8B86;
+}
+.discription button {
+    margin-left: 30%;
+    background-color: #0E8A38;
+    border: none;
+    padding: 0.5rem;
+    color: #fff;
+}
+
+main {
+    background-color: #E0E5E9;
+    font-family: "Inder", sans-serif;
+    width: 100vw;
+}
+main h1 {
+    text-align: center;
+}
+.img-text p, main h1{
+    width: 90%;
+}
+.img-text p {
+    margin-left: 1rem;
+}
+
+@media screen and (min-width: 800px) {
+    .featured-products {
+        position: relative;
+    }
+    .categories-payment {
+        position: absolute;
+        right: 0;
+        width: 20vw;
+        display: block;
+    }
+    .products {
+        margin-left: 10%;
+    }
+    img {
+        width: 80%;
+        height: 30vh;
+    }
+    .img-text {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .img-text img {
+        width: 30vw;
+    }
+    .img-text p {
+        width: 40%;
+    }
+}
